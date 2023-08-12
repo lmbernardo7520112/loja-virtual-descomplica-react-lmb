@@ -1,0 +1,136 @@
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-left: 10px; /* Ajuste o espaçamento conforme necessário */
+}
+
+.logo-image {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-left: 10px; /* Ajuste o espaçamento conforme necessário */
+}
+
+/* Carousel */
+.carousel-container {
+    margin-top: 5px; /* Adicione uma margem superior aqui */
+}
+
+/* Carousel */
+.carousel-inner img {
+    width: 800px; /* Adjust the width of the carousel images */
+    height: auto;
+}
+
+
+  
+
+/* Carousel Caption */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    text-align: center; /* Center text horizontally */
+    width: 100%; /* Make sure the caption spans the entire width */
+  }
+
+.carousel-image {
+    max-width: 300%; /* Adjust the maximum width as needed */
+    max-height: 400px; /* Adjust the maximum height as needed */
+    display: block;
+    margin: 0 auto;
+  }
+
+/* Sections */
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Team Members */
+.team-member {
+    display: inline-block;
+    margin: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Product Cards */
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    color: #777;
+}
+
+.product-card span {
+    font-weight: bold;
+    color: #e74c3c;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.frase-efeito {
+    color: #ff9900; /* Substitua pelo código da cor desejada */
+}
+
+
