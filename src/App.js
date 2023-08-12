@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductList from './components/ProductList';
@@ -16,14 +16,17 @@ function App() {
   const [totalPrice, setTotalPrice] = useState(0);
 
   const addToCart = (product) => {
-    const existingItem = cartItems.find((item) => item.id === product.id);
+    const existingCartItem = cartItems.find((item) => item.id === product.id);
 
-    if (existingItem) {
-      const updatedCartItems = cartItems.map((item) =>
-        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+    if (existingCartItem) {
+      // If the item is already in the cart, increase its quantity
+      setCartItems((prevCartItems) =>
+        prevCartItems.map((item) =>
+          item.id === existingCartItem.id ? { ...item, quantity: item.quantity + 1 } : item
+        )
       );
-      setCartItems(updatedCartItems);
     } else {
+      // If the item is not in the cart, add it with quantity 1
       setCartItems([...cartItems, { ...product, quantity: 1 }]);
     }
   };
@@ -47,10 +50,8 @@ function App() {
             path="/"
             element={<ProductList productsData={productsData} addToCart={addToCart} />}
           />
-          <Route
-            path="/cart"
-            element={<CartCard cartItems={cartItems} totalAmount={totalPrice} />}
-          />
+          {/* Display the CartCard component on the cart page */}
+          <Route path="/cart" element={<CartCard cartItems={cartItems} totalAmount={totalPrice} />} />
         </Routes>
         <Footer />
       </div>
@@ -59,6 +60,4 @@ function App() {
 }
 
 export default App;
-
-
 

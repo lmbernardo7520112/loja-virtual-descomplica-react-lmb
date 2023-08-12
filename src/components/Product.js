@@ -3,7 +3,9 @@ import React from 'react';
 const Product = ({ product, addToCart }) => {
   return (
     <div className="product-card">
-      <img src={product.image} alt={product.name} />
+      <div className="product-image">
+        <img src={product.image} alt={product.name} />
+      </div>
       <h3>{product.name}</h3>
       <p>{product.description}</p>
       <span>R${product.price.toFixed(2)}</span>
@@ -13,3 +15,4 @@ const Product = ({ product, addToCart }) => {
 };
 
 export default Product;
+

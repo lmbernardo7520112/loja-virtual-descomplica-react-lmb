@@ -30,9 +30,6 @@
     height: auto;
 }
 
-
-  
-
 /* Carousel Caption */
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
@@ -112,6 +109,93 @@
     display: block;
     margin-top: 10px;
 }
+
+/* Blue button style 
+.blue-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 10px;
+  }*/
+
+  .ver-carrinho-button {
+    margin-top: 20px; /* Adjust the margin as needed */
+    text-align: center;
+  }
+  
+  .ver-carrinho-button a {
+    background-color: #ff9900; /* Change to the desired color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ver-carrinho-button a:hover {
+    background-color: #ff6600; /* Change to the desired hover color */
+  }
+  
+  /* Position the button under the product cards */
+  .product-card {
+    margin-bottom: 20px;
+  }
+
+  .cart-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add this CSS to your styles.css */
+.cart-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .cart-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .total {
+    text-align: right;
+  }
+  
+
+  .back-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
 
 /* Footer */
 .footer {
